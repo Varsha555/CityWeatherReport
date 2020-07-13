@@ -61,6 +61,7 @@ public class CityController {
 		}
 		cityService.updateCity(city,currentCity.getId());
 		return new ResponseEntity<String>(HttpStatus.OK);
+		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 	
 	@DeleteMapping(value="/{id}",headers="Accept=application/json")
@@ -74,4 +75,5 @@ public class CityController {
 		cityService.deleteCityById(id);
 		return new ResponseEntity<City>(HttpStatus.OK);
 	}
+	//Here i added
 }
